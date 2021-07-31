@@ -1,0 +1,88 @@
+span.socialclick:hover{
+	cursor: pointer;
+}
+
+div.overlay{
+	top:0;
+	left:0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+div.overlay ul{
+	margin-bottom: 5px;
+	float: right!important;
+	width:60px;
+}
+
+div.overlay ul li{
+	list-style-type: none;
+	margin: 8px;
+}
+
+div.overlay ul li .socialclick svg{
+	fill: white;
+	padding: 10px;
+	background: rgba(0,0,0,.6);
+	border-radius: 10px;
+}
+
+.facebook-share svg:hover {
+	background: #3479DC!important;
+}
+
+.whatsapp-share svg:hover {
+	background: #25B44C!important;
+}
+
+.twitter-share svg:hover {
+	background: #359CDC!important;
+}
+
+.pinterest-share svg:hover {
+	background: #B61626!important;
+}
+
+.copy-link svg:hover {
+	background: lightgrey!important;
+}
+
+
+div.wrap div.overlay:hover{
+	opacity: 1!important;
+	-webkit-transition: all .1s ease .15s;
+    -moz-transition: all .1s ease .15s;
+    -o-transition: all .1s ease .15s;
+    -ms-transition: all .1s ease .15s;
+    transition: all .1s ease .15s!important;
+}
+
+div.wrap{
+	position: relative;
+}
+
+span.tooltip {
+	position:absolute;
+	background: rgba(0,0,0,.6);
+	color: white;
+	font-size: 16px;
+	padding:6px;
+	border-radius: 4px!important;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+	div.overlay{
+		display: flex;
+		align-items: flex-end;
+	}
+	div.overlay ul{
+		display: flex;
+	}
+	span.tooltip {
+		top: 5px!important;
+		transform: translate(50%, 2%) !important;
+	}
+}
